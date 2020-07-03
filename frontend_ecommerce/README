@@ -1,0 +1,19 @@
+Esta prueba sirve para evaluar tus conocimientos de HTML5, CSS3 (diseño responsive, incluyendo SASS o LESS), Javascript (jQuery).
+
+Evaluaremos tu habilidad en HTML y CSS, además aspectos de organización de código, buenas prácticas y creatividad para resolver los requerimientos.
+
+1. Maquetación:
+Replica el diseño ubicado en la carpeta resources/design.
+    1.1 Requerimientos:
+    Utiliza HTML5 y CSS3. Se debe realizar un diseño responsive.
+    - No podrás utilizar ningún Framework de CSS (Bootstrap, Foundation, etc.), queremos ver que tal te desenvuelves con lo básico :D
+    - Puedes utilizar FontAwesome para los iconos.
+    - Funte utilizada "Montserrat".
+
+2. Funcionalidad:
+Replica el funcionamiento que se especifica a continuación, puedes ver gifs de funcionamiento en resources/behavior.
+- La funcionalidad se puede realizar con el uso de jQuery.
+- Campos requeridos del formulario: Nombre, e-mail, observaciones. Utilizar validación de HTML5.
+- Como no tenemos un servidor de backend, prevendremos el envío del formulario y haremos un Ajax a la url(http://date.jsontest.com/), 
+esta url nos proporcionará un JSON con la fecha actual. Esta fecha la añadiremos al mensaje de confirmación que mostraremos al usuario.
+- Una vez realizada la acción el formulario se resetea.

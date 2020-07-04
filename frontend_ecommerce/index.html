@@ -303,65 +303,7 @@ window.onclick = function(event) {
 
 </script>
 
-<script>
-	$(document).ready(function(){
-
-	  
-	    
-		// Get the modal
-		var modal = document.getElementById("myModal");
-
-		// Get the button that opens the modal
-		var btn = document.getElementById("myBtn");
-
-		// Get the <span> element that closes the modal
-		//var span = document.getElementsByClassName("close")[0];
-		
-		function clear_form_when_click_on_screen() {
-			$(document).click(function() {
-					$("#contact").trigger("reset");	
-					//$(this).closest('form').find("input[type=text], textarea").val("");
-			});
-			
-			/*$("#myModal").click(function(e) {
-				e.stopPropagation(); 
-				return false;        
-			});*/
-		
-		}
-	  
-	  $("#contact").submit(function(e) {
-
-			e.preventDefault(); // avoid to execute the actual submit of the form.
-
-			var form = $(this);
-			var url = form.attr('action');
-
-			$.ajax({
-				   type: "GET",
-				   url: url,
-				   data: form.serialize(), // serializes the form's elements.
-				   success: function(data)
-				   {
-					   console.log(data["date"]); 
-					   var btn = $("myBtn");
-					   $('#text_in_modal').html(data["date"]) 	
-					   //modal.style.display = "block";
-					   $("#myModal").show('blind', {}, 600)
-						$("#contact").trigger("reset");	
-						setTimeout(function() {
-						$("#myModal").hide('blind', {}, 100)
-						}, 2000)
-				   }
-				 });
-
-
-		});
-	  	  
-	});
-	
-	
-	</script>
+<script src="js/custom.js"></script>
 
 </body>
 </html>

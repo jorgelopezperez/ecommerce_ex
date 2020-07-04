@@ -1,0 +1,607 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 30px;
+  color: #000;
+  background: #D3D3D3;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea,
+#contact button[type="submit"] {
+  font: 400 12px/16px "Montserrat", Helvetica, Arial, sans-serif;
+}
+
+#contact {
+  background: #F9F9F9;
+  padding: 25px;
+  /*margin: 150px 0;*/
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#contact h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500; /* black */	
+  display: block;
+  /*font-size: 30px;*/
+  margin-bottom: 10px;
+}
+
+#contact h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: red;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#contact button[type="submit"]:hover {
+	background: #FF3232;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.copyright {
+  text-align: center;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+
+::-webkit-input-placeholder {
+  color: #888;
+}
+
+:-moz-placeholder {
+  color: #888;
+}
+
+::-moz-placeholder {
+  color: #888;
+}
+
+:-ms-input-placeholder {
+  color: #888;
+}
+
+
+
+
+.logo-respond	{
+		height: 100px;
+		width: 600px;
+		max-width: 600px;
+		min-width: 280px;
+		margin: 0 auto;
+		display: block;
+		}
+		
+	
+
+@media all and (min-width: 1024px) and (max-width: 1280px) { 
+
+.container {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#wrapper-inner-div-form{
+	margin: auto;
+	width: 600px;
+}
+.form-wrapper-clear:after{
+	clear: both;
+	display: table;
+	content: "";
+}
+	
+.cls-form-left{
+	width: 250px;
+	float:left
+}
+
+.cls-form-right{
+	width: 300px;
+	float:left ; 
+	padding-left:30px; 
+}
+
+
+.modal0 {
+  z-index: 3; /* Sit on top */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  display: none;
+  position: absolute;
+  top: 0% ;
+  width: 600px; 
+  height: 390px;
+  /*max-height: 100%;*/
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 0% auto; /* 15% from the top and centered */
+  padding: 0px;
+  border: 1px solid white;
+  height: 100%;
+  /*width: 100%; *//* Could be more or less, depending on screen size */
+  position: relative;
+}
+
+.inner {
+  margin: 10% auto; /* 15% from the top and centered */
+  padding: 20px;
+  /*border: 1px solid #888;*/
+  width: 40%; /* Could be more or less, depending on screen size */
+  /*position: relative;*/
+  height: 400px !important;
+  /*display: flex;
+  align-items: center;*/
+}
+
+.inner-item{
+	text-align:center;
+	line-height: 20px;
+	
+}
+
+.inner-item-0{
+	margin: auto;
+	width: 100%;
+	padding: 10px;
+}
+
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) { 
+
+
+
+
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) { }
+
+@media all and (max-width: 480px) { }
+
+
+
+
+* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+/*
+@media (min-width: 1281px) {
+
+.container {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+  
+#wrapper-inner-div-form{
+	margin: auto;
+	width: 700px;
+}
+.form-wrapper-clear:after{
+	clear: both;
+	display: table;
+	content: "";
+}
+	
+.cls-form-left{
+	width: 250px;
+	float:left
+}
+
+.cls-form-right{
+	width: 300px;
+	float:left ; 
+	padding-left:30px; 
+}
+  
+}
+
+*/
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1480px) {
+  
+  
+.modal0 {
+  z-index: 3; /* Sit on top */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  display: none;
+  position: absolute;
+  top: 0% ;
+  width: 400px; 
+  height: 540px;
+  /*max-height: 100%;*/
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 0% auto; /* 15% from the top and centered */
+  padding: 0px;
+  /*border: 1px solid #888;*/
+  width: 100%; /* Could be more or less, depending on screen size */
+  position: relative;
+}
+
+.inner {
+  margin: 10% auto; /* 15% from the top and centered */
+  padding: 20px;
+  /*border: 1px solid #888;*/
+  width: 60%; /* Could be more or less, depending on screen size */
+  position: relative;
+  /*display: flex;*/
+  align-items: center;
+  height: 400px !important;
+}
+
+.inner-item{
+	text-align:center;
+	line-height: 10px;
+	
+}
+
+.inner-item-0{
+	margin: auto;
+	width: 50%;
+	padding: 10px;
+	/*height: 100px !important;*/
+}
+  
+  
+  
+  
+  
+  
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+.container {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+.modal0 {
+  z-index: 3; /* Sit on top */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  display: none;
+  position: absolute;
+  top: 0% ;
+  width: 400px; 
+  height: 540px;
+  /*max-height: 100%;*/
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 0% auto; /* 15% from the top and centered */
+  padding: 0px;
+  /*border: 1px solid #888;*/
+  width: 100%; /* Could be more or less, depending on screen size */
+  position: relative;
+}
+
+.inner {
+  margin: 10% auto; /* 15% from the top and centered */
+  padding: 20px;
+  /*border: 1px solid #888;*/
+  width: 60%; /* Could be more or less, depending on screen size */
+  position: relative;
+  /*display: flex;*/
+  align-items: center;
+}
+
+.inner-item{
+	text-align:center;
+	line-height: 100px;
+	
+}
+
+.inner-item-0{
+	margin: auto;
+	width: 50%;
+	padding-left: 0px;
+	padding-top: 10px;
+	/*height: 100px !important;*/
+}
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+.container {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.modal0 {
+  z-index: 3; /* Sit on top */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  display: none;
+  position: absolute;
+  top: 0% ;
+  width: 700px; 
+  height: 540px;
+  /*max-height: 100%;*/
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 0% auto; /* 15% from the top and centered */
+  padding: 0px;
+  border: 1px solid white;
+  width: 100%; /* Could be more or less, depending on screen size */
+  position: relative;
+}
+
+.inner {
+  margin: 10% auto; /* 15% from the top and centered */
+  padding: 20px;
+  /*border: 1px solid #888;*/
+  width: 60%; /* Could be more or less, depending on screen size */
+  /*position: relative;*/
+  /*display: flex;*/
+  height:400px !important;
+  /*align-items: center;*/
+}
+
+.inner-item{
+	text-align:center;
+	line-height: 10px;
+	
+}
+
+
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  
+.modal0 {
+  z-index: 3; /* Sit on top */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  display: none;
+  position: absolute;
+  top: 0% ;
+  width: 400px; 
+  height: 540px;
+  /*max-height: 100%;*/
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 0% auto; /* 15% from the top and centered */
+  padding: 0px;
+  border: 1px solid white;
+  width: 100%; /* Could be more or less, depending on screen size */
+  position: relative;
+}
+
+.inner {
+  margin: 10% auto; /* 15% from the top and centered */
+  padding: 20px;
+  /*border: 1px solid #888;*/
+  width: 60%; /* Could be more or less, depending on screen size */
+  /*position: relative;*/
+  height:460px !important;
+  /*display: flex;*/
+  /*align-content: center;
+  align-items: center;*/
+}
+
+
+.inner-item-0{
+	margin: auto;
+	width: 100%;
+	padding: 10px;
+}
+
+.inner-item{
+	text-align:center;
+	line-height: 30px;
+	
+}
+
+  
+  
+  
+.container {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 280px) and (max-width: 480px) {
+	
+.modal0 {
+  z-index: 3; /* Sit on top */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  display: none;
+  position: absolute;
+  top: 0% ;
+  width: 400px; 
+  height: 540px;
+  /*max-height: 100%;*/
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 0% auto; /* 15% from the top and centered */
+  padding: 0px;
+  border: 1px solid white;
+  width: 100%; /* Could be more or less, depending on screen size */
+  position: relative;
+}
+
+.inner {
+  margin: 10% auto; /* 15% from the top and centered */
+  padding: 20px;
+  /*border: 1px solid #888;*/
+  width: 60%; /* Could be more or less, depending on screen size */
+  /*position: relative;*/
+  height:460px !important;
+  /*display: flex;*/
+  /*align-content: center;
+  align-items: center;*/
+}
+
+
+
+.inner-item-0{
+	margin: auto;
+	width: 100%;
+	padding: 10px;
+}
+
+.inner-item{
+	text-align:center;
+	line-height: 30px;
+	
+}
+  
+.container {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+  
+}
+

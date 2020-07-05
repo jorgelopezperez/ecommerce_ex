@@ -78,9 +78,11 @@ class Cart:
         and tramo is [{'min_quantity': 10, 'discount': 5.0, 'is_percent': False}, {'min_quantity': 50, 'discount': 0.1,
         'is_percent': True}, {'min_quantity': 200, 'discount': 0.2, 'is_percent': True}]
         index will be 1 because it ranges quantities between 11 and 49
-        """
-        # if isinstance(tramo, list):
-        #    raise TypeError('tramo field value must be a list', 'tramo')
+		"""
+        if not isinstance(tramo, list):
+            raise TypeError('tramo field value must be a list', 'tramo')
+        if not isinstance(quant, int):
+            raise TypeError('quant field value must be a integer', 'tramo')
         num_tram_instance = len([el["min_quantity"] for el in tramo])
 
         ranges = transform_tramo_discount([el["min_quantity"] for el in tramo])
@@ -141,15 +143,15 @@ class Cart:
                     if tramos[tmp]["is_percent"] == False:
                         # No percent. Just drop for final quantity
                         total_price += (
-                            sum(
-                                [
-                                    el["final_price"]
-                                    for el in self.products_in_cart
-                                    if el["country_code"] == country_code
-                                    and el["slug"] == pr
-                                ]
-                            )
-                            - tramos[tmp]["discount"]
+                                sum(
+                                    [
+                                        el["final_price"]
+                                        for el in self.products_in_cart
+                                        if el["country_code"] == country_code
+                                           and el["slug"] == pr
+                                    ]
+                                )
+                                - tramos[tmp]["discount"]
                         )
                     else:
                         # Is percent. Make adjustment with price(1-discount_in_percent)
@@ -159,7 +161,7 @@ class Cart:
                                 el["final_price"]
                                 for el in self.products_in_cart
                                 if el["country_code"] == country_code
-                                and el["slug"] == pr
+                                   and el["slug"] == pr
                             ]
                         ) * (1 - tramos[tmp]["discount"])
 

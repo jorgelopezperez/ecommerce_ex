@@ -7,9 +7,6 @@ body {
 img {
   max-width: 100%;
 }
-input.modified-input::placeholder {
-  background-color: #bac7e8;
-}
 * {
   margin: 0;
   padding: 0;
@@ -146,23 +143,9 @@ fieldset {
   padding: 0;
   width: 100%;
 }
-/*
-::-webkit-input-placeholder {
-  color: #888;
+input.modified-input {
+  background-color: #bac7e8;
 }
-
-:-moz-placeholder {
-  color: #888;
-}
-
-::-moz-placeholder {
-  color: #888;
-}
-
-:-ms-input-placeholder {
-  color: #888;
-}
-*/
 /*############################################
 ###########  MEDIA QUERIES ###################	
 ##############################################*/

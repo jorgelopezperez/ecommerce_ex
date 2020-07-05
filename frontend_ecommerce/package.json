@@ -1,0 +1,18 @@
+{
+  "name": "frontend_guell_npm",
+  "version": "1.0.0",
+  "description": "This is a npm package to run guell consulting frontend exercise",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Jorge Lopez Perez",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.17.1",
+    "jshint": "^2.11.1",
+    "jslint": "^0.12.1",
+    "livereload": "^0.9.1",
+    "nodemon": "^2.0.4"
+  }
+}

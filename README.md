@@ -12,9 +12,11 @@ La aplicación incluye un directorio models con dos ficheros, que se corresponde
 
 Verificar que el programa pasa los test por ejecutar en la working directory:
 
+```
 python -m unittest tests_part_1
-
 python -m unittest tests_part_2
+```
+
 
 ## Frontend
 
@@ -24,11 +26,11 @@ Fichero less compilados con la utilidad lessc
 
 Si uso de Nodejs: Ejecución en el working directory de:
 
-node install --only=dev 
-
+```
+npm install --only=dev
 nodemon server.js
-
-Apuntar el navegador a http://127.0.0.1:3000
+``` 
+y apuntar el navegador a http://127.0.0.1:3000
 
 Sin uso de Nodejs: Abrir directamente en el navegador el fichero localizado en frontend_ecommerce/public/index.html
 

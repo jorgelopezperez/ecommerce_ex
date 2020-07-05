@@ -28,7 +28,9 @@ Fichero less compilados con la utilidad lessc
 lessc custom.less ../css/custom.css
 ```
 
-Si uso de Nodejs: Ejecución en el working directory de:
+- Si uso de Nodejs
+
+Ejecución en el working directory de:
 
 ```
 npm install --only=dev
@@ -36,6 +38,8 @@ nodemon server.js
 ``` 
 y apuntar el navegador a http://127.0.0.1:3000
 
-Sin uso de Nodejs: Abrir directamente en el navegador el fichero localizado en frontend_ecommerce/public/index.html
+- Sin uso de Nodejs
+
+Abrir directamente en el navegador el fichero localizado en frontend_ecommerce/public/index.html
 
 

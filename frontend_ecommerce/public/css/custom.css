@@ -144,7 +144,7 @@ fieldset {
   width: 100%;
 }
 input.modified-input {
-  background-color: #bac7e8;
+  background-color: #bac7e8 !important;
 }
 /*############################################
 ###########  MEDIA QUERIES ###################	

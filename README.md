@@ -24,6 +24,10 @@ Evaluación de conocimientos de HTML5, CSS3 (diseño responsive, incluyendo SASS
 
 Fichero less compilados con la utilidad lessc
 
+```
+lessc custom.less ../css/custom.css
+```
+
 Si uso de Nodejs: Ejecución en el working directory de:
 
 ```

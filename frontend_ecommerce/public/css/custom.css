@@ -196,7 +196,7 @@ fieldset {
 .inner-item-0 {
   margin: auto;
 }
-@media all and (min-width: 1024px) and (max-width: 1780px) {
+@media all and (min-width: 1024px) and (max-width: 2180px) {
   .container {
     max-width: 600px;
   }
